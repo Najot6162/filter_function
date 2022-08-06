@@ -31,7 +31,7 @@ class Filter
     }
 }
 
-class FilterController
+class FilterController extends Filter
 {
     public function filter()
     {
@@ -43,8 +43,7 @@ class FilterController
             'name' => 'iphone11pro',
             'price' => '600$'
         ];
-        $filter = new Filter();
-        $filter->getDataWithFilter($product, $queryProduct);
+        $this->getDataWithFilter($product, $queryProduct);
     }
 }
 
