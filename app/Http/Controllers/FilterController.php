@@ -27,7 +27,7 @@ class Filter
 {
     public function getDataWithFilter($func, $query)
     {
-        $func->filter($query);
+            $func->filter($query);
     }
 }
 
@@ -44,7 +44,6 @@ class FilterController
             'price' => '600$'
         ];
         $filter = new Filter();
-
         $filter->getDataWithFilter($product, $queryProduct);
     }
 }
