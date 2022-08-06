@@ -27,7 +27,7 @@ class Filter
 {
     public function getDataWithFilter($func, $query)
     {
-            $func->filter($query);
+        $func->filter($query);
     }
 }
 
